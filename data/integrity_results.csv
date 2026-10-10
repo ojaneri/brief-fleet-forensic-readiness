@@ -1,0 +1,8 @@
+tampering,trials,detected,localized_to_batch
+modify,200,200,200.0
+delete,200,200,200.0
+insert,200,200,200.0
+reorder,200,200,200.0
+truncate_partial,200,200,
+truncate_whole_batches,200,0,
+forge_without_key,200,200,200.0

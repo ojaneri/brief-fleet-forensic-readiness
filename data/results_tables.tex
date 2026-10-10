@@ -1,0 +1,43 @@
+\begin{table*}[t]\centering\footnotesize
+\caption{Reconstruction completeness (M1): median [interquartile range] per scenario and profile. Recall is the mean over the object classes present; precision is that of the recovered vehicles (--: no vehicle recovered).}
+\label{tab:m1}
+\begin{tabular}{@{}p{1.5in}lccc@{}}\toprule
+Scenario & Profile & Recall (mean) & Recall (veh.) & Precision (veh.) \\\midrule
+Account takeover & minimal & 0.75 & 1.00 & 0.18 [0.15--1.00] \\
+ & complete & 1.00 & 1.00 & 1.00 [1.00--1.00] \\
+Authorization probing & minimal & 0.75 & 1.00 & 1.00 [0.90--1.00] \\
+ & complete & 1.00 & 1.00 & 1.00 [0.90--1.00] \\
+Bulk location & minimal & 0.75 & 1.00 & 0.41 [0.36--0.47] \\
+ & complete & 1.00 & 1.00 & 0.79 [0.70--1.00] \\
+OTA anomaly & minimal & 0.20 & 0.00 & -- \\
+ & complete & 1.00 & 1.00 & 1.00 [1.00--1.00] \\
+Supplier abuse & minimal & 0.75 & 1.00 & 0.80 [0.72--0.89] \\
+ & complete & 1.00 & 1.00 & 1.00 [1.00--1.00] \\
+\bottomrule\end{tabular}\end{table*}
+\begin{table*}[t]\centering\footnotesize
+\caption{Share of runs, in percent, in which each investigation question was answered, minimal / complete profile.}
+\label{tab:questions}
+\begin{tabular}{@{}p{1.5in}cccccc@{}}\toprule
+Scenario & Q1 & Q2 & Q3 & Q4 & Q5 & Q6 \\\midrule
+Account takeover & 0/100 & 100/100 & 100/100 & 0/100 & 26/100 & 100/100 \\
+Authorization probing & 0/100 & 100/100 & 100/100 & 0/100 & 59/59 & 100/100 \\
+Bulk location & 0/100 & 100/100 & 100/100 & 0/100 & 0/31 & 100/100 \\
+OTA anomaly & 0/100 & 0/100 & 100/100 & 0/100 & 0/100 & 100/100 \\
+Supplier abuse & 0/100 & 100/100 & 100/100 & 0/100 & 22/100 & 100/100 \\
+\bottomrule\end{tabular}\end{table*}
+\begin{table*}[t]\centering\footnotesize
+\caption{Cost of reconstruction (M2) and storage (M4), median per run and profile.}
+\label{tab:cost}
+\begin{tabular}{@{}p{1.5in}lrrr@{}}\toprule
+Scenario & Profile & Records read & Time (ms) & KB / 1,000 req. \\\midrule
+Account takeover & minimal & 8,358 & 40 & 227 \\
+ & complete & 12,454 & 186 & 1,849 \\
+Authorization probing & minimal & 8,461 & 42 & 227 \\
+ & complete & 12,548 & 181 & 1,840 \\
+Bulk location & minimal & 8,376 & 40 & 227 \\
+ & complete & 12,604 & 170 & 1,882 \\
+OTA anomaly & minimal & 8,384 & 38 & 227 \\
+ & complete & 12,596 & 163 & 1,868 \\
+Supplier abuse & minimal & 8,720 & 43 & 227 \\
+ & complete & 12,754 & 177 & 1,821 \\
+\bottomrule\end{tabular}\end{table*}

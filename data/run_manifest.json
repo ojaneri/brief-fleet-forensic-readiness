@@ -1,0 +1,127 @@
+{
+  "created_utc": "2026-09-19T22:40:36Z",
+  "python": "3.12.3",
+  "packages": {
+    "fastapi": "0.135.2",
+    "starlette": "1.0.0",
+    "httpx": "0.28.1",
+    "PyJWT": "2.12.1",
+    "cryptography": "41.0.7",
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "scipy": "1.17.1",
+    "matplotlib": "3.10.9"
+  },
+  "pilot": {
+    "seeds": "1000-1009 per scenario",
+    "phase": "excluded from results"
+  },
+  "confirmatory": {
+    "seeds": "10000-10099 per scenario",
+    "runs": 500,
+    "workers": 6,
+    "n_fixed_at_utc": "2026-09-19T22:23:05Z"
+  },
+  "integrity_experiment": {
+    "trials_per_kind": 200,
+    "rng_seed": 20260919,
+    "run": "s5_supplier_abuse seed 4242"
+  },
+  "sha256": {
+    "data/confirmatory_metrics.csv": "b9d1de2f89624cebc8c0d21e2b158d6f89628c7524f473e570c6aa5473df8ed1",
+    "data/integrity_results.csv": "9f61520c5d10e580f16f9f61d437a2215b6f78b37fb855ee00f96f7a40baea41",
+    "data/paired_tests.csv": "5ee7d752afab49e6c0da073c8d26f77926b7ccc7505c5042eb4a8da53c2e242d",
+    "data/pilot_metrics.csv": "dc7d4ac41e80378333da70507a96462e94dc8f0d6858cbf66eb28fc72f814a14",
+    "data/question_rates.csv": "bdf78909f9f0dfeedca68fe98642005726958e6df1e280e6dd0d78239153cfdf",
+    "data/repetitions_decision.json": "9b32ca703f6cc3071ef36ee227a1a49b5a3abd9f2caa96aa4f528dd5b102d0b6",
+    "data/results_numbers.tex": "c91e52d4ca7c17e89fcfaeebe92f58fd1c2a5b5c9fff5e95f915ba8b372da1ae",
+    "data/results_summary.json": "1821b31cf363ecb113a154636658463d5376ba2ff4f2aac0e1b59e13f0cc19d1",
+    "data/results_tables.tex": "a018ae8bfd85c416c69e5717efb17fee1a89d300f174509a0cdba25586f3e6b9",
+    "data/run_manifest.json": "11659ec14a61ed73189649d09c292afce52f6300bfed1dff38a1503c81c57fd7",
+    "figures/results.pdf": "d79d9cac6ba4cdd9c6b6c6abca58cfe054b62dc02d513425fad8f6563a757651",
+    "testbed/analysis.py": "79c814473d1a9cdf5647c5a2dcdf36be5710ba7210d39e1b7f4460b69f9aaffd",
+    "testbed/app.py": "ca5355fefee41ad1c92a5d0e0828aa8701405231765c96715b8410891fb024b3",
+    "testbed/config.py": "3fbd502d4cde08396dc8a3cd83dfc7038b3b03b082ae1b0b9eebffb0928a9d9b",
+    "testbed/geo/extract_positions.py": "e3c46f98c431ad6967ddc2e492e7671200eff2c911a1e395c1aaf4db1322f9ca",
+    "testbed/geo/make_positions.sh": "73b6b3983e9890c04a26ab33afc75ac9ce7519a29e49a6a3457d54d455a2cdd6",
+    "testbed/geo/positions.json": "d3e7a63617749d93bb8c73a353d1bb1a3492ba8d219cfeb1ac607576f00f3cc6",
+    "testbed/integrity_experiment.py": "9a076c43443b6f3edfea0ff7034d7baae70f5a019fbe2d3fb9ede37edcfbc96e",
+    "testbed/logsink.py": "86c99103ee274d23f29eace59dfbe9aa1dc78bd72b05a06a60595ca66aa07510",
+    "testbed/make_numbers.py": "4f65f15473a894f203011b36eaf8b7f0f30b1fabf965f3495b218f1f252b5c97",
+    "testbed/population.py": "d80343e6cf404ecbceb0b14d76290b0bfc3a24a91a0f4f82c83a6a92e271977d",
+    "testbed/recon.py": "425fa7a823b198745adb4eb6d60e23ec99cbeda2236000dfd2d205f4b9374ec6",
+    "testbed/runner.py": "85a9410df8e160bc6a64597592ecbf7bd734ddaa42965041ef50a5f3b79e2142",
+    "testbed/tests/test_testbed.py": "ae1863f69ffb15c00b09b32e64d78646c1ec084ea4e53e038b610626db69b4a6",
+    "testbed/traffic.py": "65d9e53a00234f1dca92ec0d874c4a504bc38a4ab437ea997013ba3d60e041a8"
+  },
+  "positions": {
+    "note": "testbed/app.py gained vehicle positions (trip-simulator) after the confirmatory batch; 25 runs (seeds 10000-10004 x 5 scenarios) re-run with it reproduced all 39 non-timing columns of the recorded results exactly.",
+    "generator": "trip-simulator 3.0.1 in node:12-bullseye-slim, node-osrm 5.26.0, BBBike Curitiba extract"
+  },
+  "code_hash_note": "data/confirmatory_metrics.csv was produced by the testbed code before the positions were added; the hashes above are of the current code.",
+  "files": {
+    "data/ablation_metrics.csv": {
+      "sha256": "97056d130d6315544aa7507ee1720f74b4972ea6cfb1d9143e171f46a2723f9e",
+      "note": "updated for ablation/R155/argument improvements"
+    },
+    "testbed/config.py": {
+      "sha256": "54fddb49c4bca86e448352a04a5ec45ff5f886af57c1d4b585f7da70178253e0",
+      "note": "updated for ablation/R155/argument improvements"
+    },
+    "testbed/logsink.py": {
+      "sha256": "9c1217742d0104b31817c365849238f9e39a51153ddf3137e5a4eb5a26d93844",
+      "note": "updated for ablation/R155/argument improvements"
+    },
+    "testbed/runner.py": {
+      "sha256": "629396b9930d074426e223a5c094d4ef34195510fe0c1035e0fa54c96b764844",
+      "note": "updated for ablation/R155/argument improvements"
+    },
+    "main.tex": {
+      "sha256": "8d229717002efe9af84cff116ffe3f17fe48ed91811cb83ef046a3e7b3765b4f",
+      "note": "updated for ablation/R155/argument improvements"
+    },
+    "testbed/genai_traffic.py": {
+      "sha256": "b9839f22b57133c47dedf165b77f8c5996f813c5a6e8a40c3f77dd8e32bc9e6d",
+      "note": "GenAI synthetic traffic pipeline (CTGAN model + cleaned sessions + smoke test)"
+    },
+    "data/genai_model.pkl": {
+      "sha256": "8f862b8523bd493bef7fb1f1a179b9325fbb4517dff9bb4d31fbfd8dd7271d1f",
+      "note": "GenAI synthetic traffic pipeline (CTGAN model + cleaned sessions + smoke test)"
+    },
+    "data/genai_sessions_clean.csv": {
+      "sha256": "cb376d254743aa7e507926a7c1db46f76dbf90d416289992e2cc8b4fd995e10e",
+      "note": "GenAI synthetic traffic pipeline (CTGAN model + cleaned sessions + smoke test)"
+    },
+    "data/genai_smoke_test.csv": {
+      "sha256": "143510ba29d0234cb9f759f930fdabdeef5bf933cd728bf973a3fd0f65f15272",
+      "note": "GenAI synthetic traffic pipeline (CTGAN model + cleaned sessions + smoke test)"
+    }
+  },
+  "ablation_note": "data/ablation_metrics.csv contains 250 rows (4 configs x 5 scenarios x 10 seeds). Ablation profiles: abl_no_session, abl_no_object, abl_no_campaign projected from complete schema. | 2026-10-10: the hash recorded under files[data/ablation_metrics.csv] does not match the file; a full rerun reproduced all 250 rows (except seconds), so the recorded hash was wrong. The 200 runs = 4 configs x 5 scenarios x 10 pilot seeds (250 rows incl. baseline minimal). Superseded in the paper by E4.",
+  "genai_note": "CTGAN trained on 10K stratified log records (30 epochs, 78.5s). Post-generation sanity filter rejected 7.9% of samples. Use --traffic-source genai flag in runner.py for robustness evaluation.",
+  "extended": {
+    "created_utc": "2026-10-10T02:27:21Z",
+    "note": "CAPTOR review 2026-10-10: access-log profile, origin branch of R, E1-E4 (testbed/extended.py). E1 minimal/complete rows reproduce confirmatory_metrics.csv in every column except seconds and gt_sha256 (ground truth now records exploited_route). E2 extended to S5 (300 runs).",
+    "runs": {
+      "E1": 500,
+      "E2": 300,
+      "E3": 500,
+      "E4": 2000
+    },
+    "sha256": {
+      "data/extended_e1.csv": "ef42c24fcd8f2a63462736cf864e15e48bf6f2d4ccf36a47728207bdc27831e9",
+      "data/extended_e2.csv": "f75ae1473a7d86dcfb91a28f732b33351497005a185e455b1d856ecccfdab500",
+      "data/extended_e3.csv": "067b0908a78ab13268750f45e5866bfc921aec413963756c136667aa8084f6dc",
+      "data/extended_e4.csv": "b80a9e6501bb1677d5ce1abc98e6d901e88df57da0fbc253b87d69187694d538",
+      "data/extended_numbers.tex": "394b35e037fcc86d0cd2bb08073263e4f440acbfcbb767bb052a69d69488623f",
+      "data/extended_tables.tex": "fd4d35ef43c3ab2c1165de26fe5edae125b6c7bda0e4efc65087a28cde9961db",
+      "testbed/extended.py": "6a6ffa75e84f32e9232795a042777a1ba7ed71d1b331464671848b31cf167864",
+      "testbed/make_extended.py": "a7bc7e7f0d1005aced1208b977e986a09338c111074e75491a53f8703081f646",
+      "testbed/config.py": "9e2f79ef4c9d53704d05bdf391f3184f3d3e68911f0329a1e51e4b10402ed716",
+      "testbed/logsink.py": "b2c9ded06b13975caad903624d0580a894dd89785f4632d6cbec1d8e16f546a5",
+      "testbed/app.py": "b610da8836ed0e018a63791055f5cbac367aaaeed6b6827b3365643ec386ab83",
+      "testbed/recon.py": "2fee61a7beb20525659dde81476d09fca459521d0cc22be6acc8e794eec3150d",
+      "testbed/runner.py": "b3a7e6ac7811a7e1dcf4a5add840dc6c6e27fc6dba32e2bfc428e04cf4ece650"
+    }
+  }
+}

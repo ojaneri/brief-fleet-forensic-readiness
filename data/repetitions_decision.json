@@ -1,0 +1,96 @@
+{
+ "rule": "smallest n in {20,30,50,100} with 1.96*sd/sqrt(n) <= 0.05 for the paired difference (complete - minimal) of recall_mean and precision_mean in every scenario; floor 20, cap 100",
+ "tolerance": 0.05,
+ "ladder": [
+  20,
+  30,
+  50,
+  100
+ ],
+ "pilot_seeds": "1000-1009 per scenario",
+ "n_needed_table": [
+  {
+   "scenario": "s1_takeover",
+   "metric": "recall_mean",
+   "n_pilot": 10,
+   "median_diff": 0.25,
+   "sd_diff": 0.0,
+   "n_needed": 0
+  },
+  {
+   "scenario": "s1_takeover",
+   "metric": "precision_mean",
+   "n_pilot": 10,
+   "median_diff": 0.5466666666666666,
+   "sd_diff": 0.1780289891777581,
+   "n_needed": 49
+  },
+  {
+   "scenario": "s2_bola_probing",
+   "metric": "recall_mean",
+   "n_pilot": 10,
+   "median_diff": 0.25,
+   "sd_diff": 0.0,
+   "n_needed": 0
+  },
+  {
+   "scenario": "s2_bola_probing",
+   "metric": "precision_mean",
+   "n_pilot": 10,
+   "median_diff": 0.040909090909090895,
+   "sd_diff": 0.023950889835184577,
+   "n_needed": 1
+  },
+  {
+   "scenario": "s3_bulk_location",
+   "metric": "recall_mean",
+   "n_pilot": 10,
+   "median_diff": 0.25,
+   "sd_diff": 0.0,
+   "n_needed": 0
+  },
+  {
+   "scenario": "s3_bulk_location",
+   "metric": "precision_mean",
+   "n_pilot": 10,
+   "median_diff": 0.2916376640290683,
+   "sd_diff": 0.03318150426922083,
+   "n_needed": 2
+  },
+  {
+   "scenario": "s4_ota_anomaly",
+   "metric": "recall_mean",
+   "n_pilot": 10,
+   "median_diff": 0.8,
+   "sd_diff": 0.0,
+   "n_needed": 0
+  },
+  {
+   "scenario": "s4_ota_anomaly",
+   "metric": "precision_mean",
+   "n_pilot": 10,
+   "median_diff": 0.6666666666666667,
+   "sd_diff": 0.2086109261724288,
+   "n_needed": 67
+  },
+  {
+   "scenario": "s5_supplier_abuse",
+   "metric": "recall_mean",
+   "n_pilot": 10,
+   "median_diff": 0.25,
+   "sd_diff": 0.0,
+   "n_needed": 0
+  },
+  {
+   "scenario": "s5_supplier_abuse",
+   "metric": "precision_mean",
+   "n_pilot": 10,
+   "median_diff": 0.14904763533803156,
+   "sd_diff": 0.10246810674990318,
+   "n_needed": 17
+  }
+ ],
+ "n_fixed": 100,
+ "fixed_at_utc": "2026-09-19T22:23:05Z",
+ "confirmatory_seeds": "10000-10099 per scenario"
+}

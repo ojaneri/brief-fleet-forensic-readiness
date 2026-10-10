@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite it as below."
+title: "BRIEF: forensic readiness of connected-fleet backends — testbed, data and analysis"
+authors:
+  - family-names: "Janeri Filho"
+    given-names: "Osvaldo"
+    orcid: "https://orcid.org/0009-0000-5869-4947"
+  - family-names: "Santos Dominguez"
+    given-names: "Rafael"
+    orcid: "https://orcid.org/0009-0007-2827-618X"
+  - family-names: "de Lima"
+    given-names: "Jeferson José"
+    orcid: "https://orcid.org/0000-0001-6342-6162"
+  - family-names: "Dias Santos"
+    given-names: "Max Mauro"
+    orcid: "https://orcid.org/0000-0001-7877-3554"
+license: MIT

@@ -1,0 +1,11 @@
+scenario,profile,n,q1,q2,q3,q4,q5,q6
+s1_takeover,minimal,100,0.0,1.0,1.0,0.0,0.26,1.0
+s1_takeover,complete,100,1.0,1.0,1.0,1.0,1.0,1.0
+s2_bola_probing,minimal,100,0.0,1.0,1.0,0.0,0.59,1.0
+s2_bola_probing,complete,100,1.0,1.0,1.0,1.0,0.59,1.0
+s3_bulk_location,minimal,100,0.0,1.0,1.0,0.0,0.0,1.0
+s3_bulk_location,complete,100,1.0,1.0,1.0,1.0,0.31,1.0
+s4_ota_anomaly,minimal,100,0.0,0.0,1.0,0.0,0.0,1.0
+s4_ota_anomaly,complete,100,1.0,1.0,1.0,1.0,1.0,1.0
+s5_supplier_abuse,minimal,100,0.0,1.0,1.0,0.0,0.22,1.0
+s5_supplier_abuse,complete,100,1.0,1.0,1.0,1.0,1.0,1.0
